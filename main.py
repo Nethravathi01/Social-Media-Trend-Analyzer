@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 from googleapiclient.discovery import build
 
-API_KEY = "AIzaSyBerJajnHyW0vywekOhliUMx_05Ff9WrNg"
+API_KEY = "YOUR_API_KEY"
 youtube = build(serviceName='youtube', version='v3', developerKey=API_KEY)
 request = youtube.videos().list(
     part="snippet,statistics",
